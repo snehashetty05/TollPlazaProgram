@@ -10,7 +10,7 @@ public class Vehicle {
 	public Vehicle(String type,int fare){
 		this.type =type;
 		this.fare=fare;
-		System.out.println("Vehicle Type ="+ type +"\n" +"Vehicle Fare="+ fare);
+		System.out.println("Vehicle Type ="+ type +"\n" +"Vehicle Fare to collect="+ fare);
 	}
 	
 	
