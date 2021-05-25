@@ -41,7 +41,7 @@ public class Main {
 				System.out.println("\n**********Program terminated ...**********\n");  
 				return;
 			default:
-				System.out.println("\n invalid response \n");
+				System.out.println("\n Invalid Response !!! \n");
 				break;
 			}
 		}
@@ -69,6 +69,11 @@ public class Main {
 		System.out.println("1.Tollbooth 1\n2.Tollbooth 2\n3.Tollbooth 3\n4.Tollbooth 4");
 		int tollId = sc.nextInt();
 		
+		if(tollId >5 || tollId ==0) {
+			System.out.println("\n Invalid Response!!!\n");
+			return tollBooth;
+		}
+		
 		while (true) {
 			System.out.println("\n*********** Welcome to Toll Booth " + tollId + " **********");
 			System.out.println("\n Choose your option:\n");
@@ -87,7 +92,7 @@ public class Main {
 				System.out.println("\n*********** Log Out from Tollbooth " + tollId + " ***********");
 				return tollBooth;
 			default:
-				System.out.println("\n invalid response \n");
+				System.out.println("\n Invalid Response !!! \n");
 				break;
 			}
 		}
@@ -136,7 +141,7 @@ public class Main {
 				System.out.println("\n*********** Out from collecting fare from Vehicle ************\n");
 				return tollBooth.get(id - 1);
 			default:
-				System.out.println("\n invalid response \n");
+				System.out.println("\n Invalid Response !!!\n");
 				break;
 			}
 		}
