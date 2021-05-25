@@ -58,7 +58,7 @@ public class Main {
 				tollBooth.set(tollId-1,intFare);
 				break;
 			case 2:
-				System.out.println("Total fare collected :" + intFare);
+				System.out.println("Total fare collected :" + tollBooth.get(tollId-1));
 				break;
 			case 3:
 				System.out.println("Out from Tollbooth " + tollId);
